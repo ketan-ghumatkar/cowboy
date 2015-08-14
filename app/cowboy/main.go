@@ -4,6 +4,7 @@ import (
 	"github.com/vishaltelangre/cowboy/Godeps/_workspace/src/github.com/gin-gonic/gin"
 	"github.com/vishaltelangre/cowboy/app/cowboy/powers/excuse"
 	"github.com/vishaltelangre/cowboy/app/cowboy/powers/movie_lookup"
+	"github.com/vishaltelangre/cowboy/app/cowboy/powers/recharge"
 	"net/http"
 	"os"
 )
@@ -21,6 +22,7 @@ func main() {
 	})
 	r.POST("/movie.:format", movie_lookup.Handler)
 	r.POST("/excuse.:format", excuse.Handler)
+	r.POST("/recharge.:format", recharge.Handler)
 
 	// TODO:
 	// r.POST("/fortune.:format", fortune.Handler)
