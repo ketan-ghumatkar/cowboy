@@ -5,7 +5,7 @@ The good, the bad, and the ugly.
 
 ## Watch `cowboy` in action!
 
-![watch cowboy in action!](https://raw.github.com/vishaltelangre/cowboy/master/static/sneak_peak.gif)
+![watch cowboy in action!](https://raw.github.com/vishaltelangre/cowboy/master/static/sneak_peak.gif?v=aug14)
 
 ## Usage
 
@@ -16,17 +16,22 @@ For example:
 ```
 /imdb casablanca
 /excuse
+/producthunt_posts 2
 ```
 
 ## Available commands
+
 - Movie details lookup on IMDb (URL: http://cowboy-slack.herokuapp.com/movie.slack)
 - Get excuses to spit on your boss' face (URL: http://cowboy-slack.herokuapp.com/excuse.slack)
-- More coming soon...
+- Get all featured/trending products from Product Hunt (URL: http://cowboy-slack.herokuapp.com/producthunt/posts.slack)
 
-## TODO
+## More coming soon...
+
+- HN/best
 - DDG search
 - Weather forecast
 - Simple calculations
+- Define word
 - Wiki lookup
 
 ## Integrate with your Slack team
@@ -53,6 +58,7 @@ Follow [this](https://devcenter.heroku.com/articles/getting-started-with-go) tut
 - Please use the [issue tracker](https://github.com/vishaltelangre/cowboy/issues) to report any bugs or file feature requests.
 
 ## Thankings
+
 - This project is inspired from @karan's [overflow](https://github.com/karan/slack-overflow), but is way more powerful!
 - Movie details are retrieved from http://www.omdbapi.com/. Thanks to the creator of this site.
 - Source of funny programmer's excuses: http://www.programmerexcuses.com/
