@@ -33,3 +33,14 @@ func GetContent(url string, headers map[string]string) ([]byte, error) {
 
 	return body, nil
 }
+
+// Delete empty strings from array of string
+func DeleteEmpty (s []string) []string {
+    var r []string
+    for _, str := range s {
+        if str != "" {
+            r = append(r, str)
+        }
+    }
+    return r
+}
